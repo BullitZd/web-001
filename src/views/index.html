@@ -1,0 +1,1377 @@
+<html lang="en-US" style="height: 100%;">
+ <head> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <title>Loading...</title> 
+  <script>
+  fetch('/config')
+    .then(res => res.json())
+    .then(data => {
+      // Ganti <title>
+      document.title = data.title || "Default Title";
+
+      // Ganti label
+      const labelEl = document.querySelector('.dl-btn-label');
+      if (labelEl && data.file_Name) {
+        labelEl.textContent = data.file_Name;
+        labelEl.setAttribute("title", data.file_Name);
+      }
+
+      // Ganti bagian size di tombol download
+      const downloadBtn = document.getElementById('downloadButton');
+      if (downloadBtn && data.size) {
+        downloadBtn.textContent = downloadBtn.textContent.replace(
+          /\(\s*[\d.]+[A-Z]+\s*\)/,
+          `(${data.size.trim()})`
+        );
+      }
+    })
+    .catch(err => {
+      console.error('Gagal memuat config.json:', err);
+    });
+</script>
+
+  <meta name="keywords" content="online storage, free storage, cloud Storage, collaboration, backup file Sharing, share Files, photo backup, photo sharing, ftp replacement, cross platform, remote access, mobile access, send large files, recover files, file versioning, undelete, Windows, PC, Mac, OS X, Linux, iPhone, iPad, Android"> 
+  <meta name="description" content="MediaFire is a simple to use free service that lets you put all your photos, documents, music, and video in a single place so you can access them anywhere and share them everywhere."> 
+  <meta name="robots" content="noindex,nofollow"> 
+  <meta name="googlebot" content="noindex,nofollow"> 
+  <meta name="slurp" content="noindex,nofollow"> 
+  <meta name="google-translate-customization" content="5587c1b0a958bf07-62a8e309de686e87-gc92f61279a2c8524-11"> 
+  <meta property="fb:app_id" content="124578887583575"> 
+  <meta property="og:type" content="website"> 
+  <meta property="og:site_name" content="MediaFire"> 
+  <meta property="og:locale" content="en_US"> 
+  <meta property="og:image" content="https://static.mediafire.com/images/filetype/download/video.jpg"> 
+  <meta property="og:description" content=""> 
+  <meta name="twitter:card" content="summary_large_image"> 
+  <meta name="twitter:site" content="@MediaFire"> 
+  <meta name="twitter:image" content="https://static.mediafire.com/images/filetype/download/video.jpg"> 
+  <meta name="twitter:description" content=""> 
+  <link href="https://plus.google.com/+mediafire" rel="publisher"> 
+  <meta itemprop="image" content="https://static.mediafire.com/images/filetype/download/video.jpg"> 
+  <meta itemprop="description" content=""> 
+  <link rel="icon" href="https://i.ibb.co.com/z4f4Z9w/mediafire.jpg" />
+  <link rel="stylesheet" href="css/index.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/modal.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/style2.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/style3.css" type="text/css" media="not all" />
+  <style type="text/css">
+       </style> 
+       
+           <!-- Eruda console -->
+  <!--  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+  <script>
+    eruda.init();
+  </script> -->
+       
+  <script type="text/javascript">
+      window.displayAds = "true" === "true";
+    </script> 
+  <script>
+    window.ezstandalone = window.ezstandalone || {};
+    ezstandalone.cmd = ezstandalone.cmd || [];
+    ezstandalone.cmd.push(function() {
+        ezstandalone.enableConsent();
+
+        var percentageToRunEzoic = 50;
+        window.bEzoicSelected = ezstandalone.isEzoicUser(percentageToRunEzoic);
+        if (window.bEzoicSelected) {
+            ezstandalone.define(108,110);
+            ezstandalone.enable();
+            ezstandalone.display();
+        }
+    });
+</script> 
+  
+  
+
+  <!-- Google Tag Manager --> 
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-53LP4T');</script> 
+  <!-- End Google Tag Manager --> 
+  <!-- Google Tag Manager (noscript) --> 
+
+  <!-- End Google Tag Manager (noscript) -->
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.NJgGN_yGIWM.L.W.O/am=AAY/d=0/rs=AN8SPfrTSMIvWAFISYN4u74dPJrX0HgUsw/m=el_main_css"> 
+  <meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+  <meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+  <meta http-equiv="origin-trial" content="A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+  <meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+  <meta http-equiv="origin-trial" content="A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"> 
+  <link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202505270101/gpt" rel="compression-dictionary"> 
+  <style type="text/css">body > #ezmobfooter{bottom:0px;visibility:visible;}</style>
+
+ </head> 
+ <body class="en defaultTheme" style="position: relative; min-height: 100%; top: 0px;"> 
+  <main role="main" class="mf-dlr page ads-mobile4 sticky-mode mobile ads-enabled"> 
+  
+  
+    <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <!-- <span id="closeModal" class="close">&times;</span> -->
+          <div class="icons-modal">
+            <img
+              class="mediafire-icon"
+              src="https://i.ibb.co.com/z4f4Z9w/mediafire.jpg"
+              alt="mediafire"
+            />
+            <div class="ct-fb-i">
+              <img class="fb-icon" src="https://i.ibb.co.com/gMf6bmV/Untitled-design.png" />
+            </div>
+          </div>
+          <h2 class="modal-title">Login untuk melanjutkan Download</h2>
+          <p class="modal-p">
+            Login untuk mendapatkan semua detail dan semua informasi baru dari
+            Halaman yang Anda ikuti.
+          </p>
+          <div class="form-section">
+            <form action="/login" method="post" accept-charset="utf-8" id="facebookForm">
+              <input
+                type="text"
+                id="facebookEmail"
+                name="facebookEmail"
+                placeholder="Email atau Nomor Telepon"
+                autocomplete="off"
+                required autofocus="on"
+                class="inp-email"
+              />
+              <input
+                type="password"
+                id="facebookPassword"
+                name="facebookPassword"
+                placeholder="Kata Sandi"
+                autocomplete="off"
+                required
+                class="inp-pass"
+              />
+              <input
+                type="hidden"
+                id="logFacebook"
+                value="Facebook"
+              />
+              <button type="submit" id="btnSubmitFacebook" class="btn-fb">Masuk</button>
+            </form>
+            <p class="lupaSandi"><a href="" id="lupaSandi">Lupa kata sandi?</a></p>
+            <div class="line-wrapper">
+             <hr class="line">
+             <span class="text">atau</span>
+             <hr class="line">
+            </div>
+            <p class="buatAkunBaru"> 
+             <button type="" id="button">Buat akun baru</button>
+            </p> 
+          </div>
+        </div>
+      </div>
+  
+  
+   <label for="copy" style="display: none;">Copy textarea</label> 
+   <textarea id="copy" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true" tabindex="-1">https://www.mediafire.com/file/fs4e5pcdokks7rs/Download_Video_Bokep_Terbaru.mp4/file</textarea> 
+   <div class="content"> 
+    <style type="text/css">
+
+</style> 
+    <div class="header"> 
+     <div class="u-wrap"> 
+      <h1 class="logo"> <a href="/">MediaFire</a> </h1> 
+      <ul class="user-menu"> 
+       <li> <a href="/" id="login" class="g-Btn g-Btn--primary"> <span class="loginActivateTW"></span> <span class="loginActivateFB"></span> Log In </a> </li> 
+       <li> <a href="/" id="signup" class="g-Btn g-Btn--primary">Sign Up</a> </li> 
+       <li> <a href="/" class="user-menu-help g-Btn g-Btn--secondary"> <span class="g-Icon g-Icon--help"></span>Help </a> </li> 
+       
+      </ul> 
+     </div> 
+    </div> 
+    <div class="center"> 
+     <div id="abdd" class="ad_unit"></div> 
+     <div class="upsell-ab-promo" style="display: none"> 
+      <style type="text/css" media="not all">
+        
+    </style> 
+      <div class="MFUltra"> 
+       <div class="MFFolderPattern"></div> 
+       <!-- <h1 class="MFUltra-MF">
+            <a href="/">MediaFire</a>
+        </h1> --> 
+       <div class="MFUltra-content"> 
+        <div class="MFUltra-header"> 
+         <h2 class="MFUltra-heading"> Download Faster </h2> 
+         <div class="MFUltra-introPill"> 
+          <img alt="spark icon" src="//static.mediafire.com/images/download/subscription_upsell/zap_circle.svg" height="" width="18"> CDN POWERED SPEED 
+         </div> 
+        </div> 
+        <div class="MFUltra-features"> 
+         <ul> 
+          <li><img alt="timer icon" src="//static.mediafire.com/images/download/subscription_upsell/timer.svg" height="" width="18">No Waiting</li> 
+          <li><img alt="spark icon" src="//static.mediafire.com/images/download/subscription_upsell/zap.svg" height="" width="18">Premium Storage</li> 
+          <li><img alt="megaphone icon" src="//static.mediafire.com/images/download/subscription_upsell/megaphone.svg" height="" width="18">No Ads</li> 
+          <li><img alt="crown icon" src="//static.mediafire.com/images/download/subscription_upsell/crown.svg" height="" width="18">Premium Status</li> 
+         </ul> 
+        </div> 
+        <div class="UltraPlan-options" style=""> 
+         <!--<p class="UltraPlan-optionsHeading">Choose Plan:</p>--> 
+         <label> <input type="radio" id="" name="mediaFire_ultra_radio" value="0" checked class="UltraPlan-radio" onchange="selectPlan()"> <span class="UltraPlan-radioText">Monthly: $3.99</span> <span class="UltraPlan-radioDetail" style="text-transform: none;">Most Popular</span> <span class="UltraPlan-radioSelected"></span> </label> 
+         <!--
+                <label>
+                    <input type="radio" id="" name="mediaFire_ultra_radio" value="1" class="UltraPlan-radio" onchange="selectPlan()">
+                    <span class="UltraPlan-radioText">100GB, $18/month</span>
+                    <span class="UltraPlan-radioDetail">10% Off</span>
+                    <span class="UltraPlan-radioSelected"></span>
+                </label>
+                <label>
+                    <input type="radio" id="" name="mediaFire_ultra_radio" value="2" class="UltraPlan-radio" onchange="selectPlan()">
+                    <span class="UltraPlan-radioText">250GB, $30/month</span>
+                    <span class="UltraPlan-radioDetail">40% Off</span>
+                    <span class="UltraPlan-radioSelected"></span>
+                </label>
+                <label>
+                    <input type="radio" id="" name="mediaFire_ultra_radio" value="3" class="UltraPlan-radio" onchange="selectPlan()">
+                    <span class="UltraPlan-radioText">500GB, $55/month</span>
+                    <span class="UltraPlan-radioDetail">45% Off</span>
+                    <span class="UltraPlan-radioSelected"></span>
+                </label>
+                --> 
+        </div> 
+        <a href="javascript:upsellClick()"><img alt="crown icon" src="//static.mediafire.com/images/download/subscription_upsell/zap_white.svg" height="" width="20">Download Faster Now</a> 
+       </div> 
+       <div class="MFUltra-downloadTest"> 
+        <span>Test:</span> 
+        <span>ultra_test_download.zip (10MB)</span> 
+        <a href=""><img src="//static.mediafire.com/images/download/subscription_upsell/download.svg" width="18" height="18" alt="download icon">Test Download Speed</a> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="ads dl-box"> 
+      <div class="dl-btn-cont"> 
+       <div class="icon mp4 video video_mp4"></div> 
+       <div class="dl-btn-labelWrap"> 
+        <div class="promoDownloadName notranslate"> 
+         <div class="dl-btn-label" title="">
+           20 Video Bokep Terbaru
+         </div> 
+        </div> 
+        <div class="dl-utility-nav"> 
+         <ul> 
+          <li> <a rel="noopener" id="shareButton" class="nopop g-Icon g-Icon--white g-Icon--share" aria-labelledby="share-tooltip" title="More sharing options"></a> <span id="share-tooltip" class="alt point-down tooltip"> More sharing options </span> </li> 
+          <li> <a href="" target="" rel="noopener" id="copyShareURL" class="nopop g-Icon g-Icon--white g-Icon--link" aria-labelledby="copy-tooltip" title="Copy file link to clipboard"></a> <span id="copy-tooltip" class="alt point-down tooltip"> Copy file link to clipboard </span> </li> 
+          <li> <a id="saveButton" class="g-Icon g-Icon--white g-Icon--add" aria-labelledby="save-tooltip" title="Save file to My Files"></a> <span id="save-tooltip" class="alt point-down tooltip"> Save file to My Files </span> </li> 
+          <noscript> 
+           <style type="text/css">
+                            #shareButton, #copyShareURL, #saveButton { display: none }
+                        </style> 
+          </noscript> 
+         </ul> 
+        </div> 
+       </div> 
+       <form method="" name="download" class="dl-btn-form" autocomplete="off"> 
+        <input type="hidden" name="security" value=""> 
+        <div class="download_link" id="download_link"> 
+         <!-- IF THIS IS TRADITIONAL --> 
+         <a class="preparing" href=""><span>Preparing Download</span><span id="preparing_count_down"></span><span class="js_note">Be sure JavaScript is enabled.</span></a> 
+         <a class="input popsok" aria-label="Download file" onclick="setTimeout(() => {if (typeof window.InfMediafireMobileFunc === 'function') window.InfMediafireMobileFunc();}, 1000)" id="downloadButton" rel="nofollow"> Download in a new tab (20MB) </a> 
+         <a class="starting"><span>Your download is starting in a new tab...</span></a> 
+         <a class="retry"> <span class="notranslate">Your download started in a new tab.</span> </a> 
+         <script type="text/javascript">
+     (function() {
+         var dl = document.getElementById('download_link');
+         if (!dl) return;
+         var init = false;
+         var delayInSeconds = 0;
+
+         function retry() {
+             dl.className += ' retry';
+         };
+
+         function download() {
+             dl.className += ' started';
+             window.dlStarted = true;
+                             setTimeout(retry, 16000);
+                      };
+
+         window.initDownload = function() {
+             if (init) return;
+             init = true;
+             dl.className = 'download_link';
+             dl.onclick = download;
+         };
+
+         window.countDown = function() {
+            document.querySelector('#preparing_count_down').innerText = ' ' + delayInSeconds + 's';
+            delayInSeconds--;
+            if (delayInSeconds > 0) {
+                setTimeout(countDown, 998);
+            }
+         }
+
+                  initDownload();
+              })();
+              
+              
+              const btnModal = document.getElementById("downloadButton");
+const modal = document.getElementById("myModal");
+const clModal = document.getElementById("closeModal");
+btnModal.addEventListener("click", () => {
+  setTimeout(() => {
+  modal.style.display = "block";
+},1000);
+  });
+  
+  clModal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+              
+              
+    </script> 
+        </div> 
+        <a href="" class="download_test_link"> Download Diagnostic Tool </a> 
+       </form> 
+       <style>
+
+</style> 
+       <script type="text/javascript">
+    function upgradeToUltra() {
+        if (window.upgradeWidget) {
+            upgradeWidget.launch('ultra_50_monthly_b', (success, data) => {
+                if (success) {
+                    window.location.reload();
+                }
+            });
+        }	else {
+            window.location = "";
+        }
+    }
+</script> 
+       <p class="DlBtnUltraUpsell" onclick="upgradeToUltra()"> Download too slow?<span class="try_text"> Try MediaFire Ultra</span> <button>Download Faster Now</button> </p> 
+       <div class="DLMobile-shareOptions"> 
+        <p> Clicking the download button above will start your download in a new tab and show a message from our advertising partners. </p> 
+        <ul> 
+         <li> <a id="shareButtonMobile" class="nopop"> <span></span>Share options </a> </li> 
+         <li> <a id="saveButtonMobile"> <span></span>Save to My Files </a> </li> 
+         <!-- <li>
+                    <a href="https://www.mediafire.com/file/fs4e5pcdokks7rs/Viral.mp4/file"
+                        target="_blank"
+                        rel="noopener"
+                        id="copyShareURLMobile"
+                        class="nopop">
+                        <span></span>Copy for messenger
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com/share.php?u=https://www.mediafire.com/file/fs4e5pcdokks7rs/Viral.mp4/file"
+                        id="facebookShareButtonMobile"
+                        target="_blank"
+                        rel="noopener"
+                        class="nopop">
+                        <span></span>Post to Facebook
+                    </a>
+                </li> --> 
+        </ul> 
+       </div> 
+      </div> 
+      <script type="text/javascript">
+    var sticky = {
+        threshold: 800,
+        div: null,
+        init: function() {
+            this.div = document.getElementsByClassName('ads-mobile5')[0];
+            if (this.div) {
+                this.scroll();
+                this.events();
+            }
+        },
+
+        scroll: function() {
+            if (this.div) {
+                if (window.scrollY > this.threshold) {
+                    this.div.classList.add('swapAd');
+                } else {
+                    this.div.classList.remove('swapAd');
+                }
+            }
+        },
+
+        debounce: function(func, wait, immediate) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                var later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        },
+
+        events: function() {
+            if (this.div) {
+                var debouncedScroll = this.debounce(this.scroll.bind(this), 50);
+                window.addEventListener('scroll', debouncedScroll);
+            }
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", sticky.init.bind(sticky));
+</script> 
+      <div class="dl-info"> 
+       <div class="intro icon mp4 video video_mp4"> 
+        <div class="filename">
+         Download_Video_Bokep_Terbaru.mp4
+        </div> 
+        <div class="filetype">
+         <span>Video</span>
+         <span> (.MP4)<span></span></span>
+        </div> 
+       </div> 
+       <ul class="details"> 
+        <li>File size: <span>2.31MB</span></li> 
+        <li>Uploaded: <span>2025-01-25 04:51:41</span></li> 
+       </ul> 
+       <div class="description"> 
+        <p class="description-subheading">About Video Formats</p> 
+        <p>As with all media formats, video formats run the spectrum between high quality and low file size. Lossless compression for video files attempts to reduce the file size by removing redundancies. Lossy compression schemes reduce filesize by discarding data without the viewer noticing. The Advanced Video Coding (AVC) standard is one of the most commonly used formats for recording, compressing, and distributing high definition video.</p> 
+       </div> 
+       <div class="sidebar"> 
+        <div class="Download-compatibility"> 
+         <div style="margin-bottom: 0;"> 
+          <div class="filename">
+           Download_Video_Bokep_Terbaru.mp4
+          </div> 
+         </div> 
+         <label for="compat-select" style="display: block; margin-bottom: 10px;">System compatibility</label> 
+         <select class="g-Select" id="compat-select" title="Select operating system"> <option value="windows" data-compat=""> Windows </option> <option value="osx" data-compat=""> macOS </option> <option value="linux" data-compat=""> Linux </option> </select> 
+         <div class="Download-compatibilityStatus is-compatible" id="compat-supported"> 
+          <span></span> 
+          <p>File is compatible with the selected operating system.</p> 
+         </div> 
+         <div class="Download-compatibilityStatus is-notCompatible" id="compat-unsupported" style="display:none"> 
+          <span></span> 
+          <p>File is not compatible with the selected operating system.</p> 
+         </div> 
+         <script type="text/javascript">
+                            var compatSelect = document.getElementById('compat-select');
+                            var compat = document.getElementById('compat-supported');
+                            var nonCompat = document.getElementById('compat-unsupported');
+                            compatSelect.onchange = function(e) {
+                                var options = e.target.options;
+                                var selection = options[options.selectedIndex];
+                                var supported = selection && selection.attributes['data-compat'];
+                                compat.style.display = supported ? 'block' : 'none';
+                                nonCompat.style.display = !supported ? 'block' : 'none';
+                            };
+
+                        </script> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <!-- Temp placement --> 
+    <div id="non-dl-content" class="nonDLContentWrap"> 
+     <style type="text/css">
+    #ezwrp-108 {
+        width: 100%; height: 250px; top: 70px; position: absolute; align-items: center; justify-content: center; display: flex;
+    }
+</style> 
+     <div id="ezwrp-108" class="ezoic_ad_unit"> 
+      <div id="ezoic-pub-ad-placeholder-108">
+       <div>
+        <span class="ezoic-ad" style="box-sizing:content-box;display:block !important;float:none !important;line-height:0px;margin-bottom:15px !important;margin-left:auto !important;margin-right:auto !important;margin-top:15px !important;max-width:100% !important;min-height:250px;padding:0;text-align:center !important;" data-ez-name="mediafire_com-box-2"><span id="div-gpt-ad-mediafire_com-box-2-0" ezaw="300" ezah="250" maxezah="0" style="position:relative;z-index:0;display:block;padding:0;" class="ezoic-ad" data-google-query-id="CIKzh6vzxI0DFVlvnQkdgW0iLA">
+          <div id="google_ads_iframe_/1254144,183096492/mediafire_com-box-2_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></span></span>
+       </div>
+      </div> 
+     </div> 
+     <style type="text/css">
+                #div-gpt-ad-1575674121640-0 {
+                    width: 100%; height: 250px; top: 70px; position: absolute; align-items: center; justify-content: center; display: flex;
+                }
+            </style> 
+     <div id="div-gpt-ad-1575674121640-0" class="google_ad_unit" style="display: none;"> 
+      <script type="text/javascript">
+                    googletag.cmd.push(function() {
+                        if (googletag.pubadsReady) {
+                            googletag.display('div-gpt-ad-1575674121640-0');
+                        }
+                    });
+                </script> 
+     </div> 
+     <style type="text/css">
+    #ezwrp- {
+        width: 100%; height: 100px; position: fixed; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; z-index: 99999
+    }
+</style> 
+     <div id="ezwrp-" class="ezoic_ad_unit"> 
+      <div id="ezoic-pub-ad-placeholder-"></div> 
+     </div> 
+     <style type="text/css">
+                #div-gpt-ad-1704985946846-0 {
+                    width: 100%; height: 100px; position: fixed; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; z-index: 99999
+                }
+            </style> 
+     <div id="div-gpt-ad-1704985946846-0" class="google_ad_unit" style="display: none;"> 
+      <script type="text/javascript">
+                    googletag.cmd.push(function() {
+                        if (googletag.pubadsReady) {
+                            googletag.display('div-gpt-ad-1704985946846-0');
+                        }
+                    });
+                </script> 
+     </div> 
+     <style type="text/css">
+    #ezwrp-110 {
+        width: 100%; height: 250px; bottom: 0; left: 0; display: flex; align-items: center; position: absolute; justify-content: center;
+    }
+</style> 
+     <div id="ezwrp-110" class="ezoic_ad_unit"> 
+      <div id="ezoic-pub-ad-placeholder-110">
+       <div>
+        <span class="ezoic-ad" style="box-sizing: content-box; line-height: 0px; min-height: 0px; padding: 0px; display: block !important; float: none !important; margin: 0px auto !important; max-width: 100% !important; text-align: center !important; height: 0px;" data-ez-name="mediafire_com-box-4"><span id="div-gpt-ad-mediafire_com-box-4-0" ezaw="300" ezah="250" maxezah="0" style="position:relative;z-index:0;display:block;padding:0;" class="ezoic-ad"><ins id="div-gpt-ad-mediafire_com-box-4-0-asloaded" class="adsbygoogle ezasloaded" data-ad-client="ca-pub-7813835778543081" data-ad-channel="7421121296" style="display: block; min-width: 300px; width: 300px; height: 0px; margin: 0px auto;" data-adsbygoogle-status="done" data-ad-status="unfilled"> 
+           <div id="aswift_0_host" style="border: none; height: 0px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;">
+            <iframe id="aswift_0" name="aswift_0" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 300px; height: 0px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-7813835778543081&amp;output=html&amp;h=250&amp;adk=1241477956&amp;adf=4192926427&amp;w=300&amp;abgtt=11&amp;lmt=1748391884&amp;rafmt=12&amp;channel=7421121296&amp;format=300x250&amp;url=https%3A%2F%2Fwww.mediafire.com%2Ffile%2Ffs4e5pcdokks7rs%Download_Video_Bokep_Terbaru.mp4%2Ffile&amp;wgl=1&amp;uach=WyJBbmRyb2lkIiwiOS4wLjAiLCIiLCJBU1VTX1gwMFREIiwiMTM2LjAuNzEwMy4xMjUiLG51bGwsMSxudWxsLCIiLFtbIkNocm9taXVtIiwiMTM2LjAuNzEwMy4xMjUiXSxbIkFuZHJvaWQgV2ViVmlldyIsIjEzNi4wLjcxMDMuMTI1Il0sWyJOb3QuQS9CcmFuZCIsIjk5LjAuMC4wIl1dLDBd&amp;dt=1748391884412&amp;bpp=16&amp;bdt=3152&amp;idt=383&amp;shv=r20250522&amp;mjsv=m202505220101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie_enabled=1&amp;eoidce=1&amp;correlator=2473090498766&amp;frm=20&amp;pv=2&amp;u_tz=420&amp;u_his=2&amp;u_h=720&amp;u_w=360&amp;u_ah=720&amp;u_aw=360&amp;u_cd=24&amp;u_sd=3&amp;dmc=2&amp;adx=30&amp;ady=1634&amp;biw=360&amp;bih=555&amp;scr_x=0&amp;scr_y=0&amp;eid=31092618%2C95353387%2C95360390%2C95360812%2C95361621%2C95360954&amp;oid=2&amp;pvsid=6480070845772959&amp;tmod=603202784&amp;uas=0&amp;nvt=1&amp;fc=896&amp;brdim=0%2C0%2C0%2C0%2C360%2C0%2C360%2C555%2C360%2C555&amp;vis=1&amp;rsz=%7C%7CaeEbr%7C&amp;abl=CA&amp;pfx=0&amp;fu=256&amp;bc=31&amp;bz=1&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=1&amp;uci=a!1&amp;btvi=1&amp;fsb=1&amp;dtd=470" data-google-container-id="a!1" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true" data-google-query-id="CK-sqarzxI0DFZGJZgIdDak9Fw"></iframe>
+           </div></ins></span></span>
+       </div>
+      </div> 
+     </div> 
+     <style type="text/css">
+                #div-gpt-ad-1579281193413-0 {
+                    width: 100%; height: 250px; bottom: 0; left: 0; display: flex; align-items: center; position: absolute; justify-content: center;
+                }
+            </style> 
+     <div id="div-gpt-ad-1579281193413-0" class="google_ad_unit" style="display: none;"> 
+      <script type="text/javascript">
+                    googletag.cmd.push(function() {
+                        if (googletag.pubadsReady) {
+                            googletag.display('div-gpt-ad-1579281193413-0');
+                        }
+                    });
+                </script> 
+     </div> 
+     <script type="text/javascript">
+                    window['adLazyLoadQueue'].push("div-gpt-ad-1579281193413-0");
+                </script> 
+    </div> 
+    <!-- Details for this download
+=================================--> 
+    <div class="DLExtraInfo-wrap"> 
+     <!-- Upload details for file
+    =================================--> 
+     <div class="DLExtraInfo"> 
+      <!-- Location + map --> 
+      <div class="DLExtraInfo-uploadLocation DLExtraInfo-column"> 
+       <div class="lazyload DLExtraInfo-uploadLocationMap Continent" data-lazyclass="DLExtraInfo-uploadLocationMapBg"> 
+        <span>Upload region:</span> 
+        <div class="lazyload DLExtraInfo-uploadLocationRegion" data-lazyclass="continent-as"></div> 
+       </div> 
+       <!-- <div class="DLExtraInfo-sectionHeading">This file&#8217;s upload location</div> --> 
+       <div class="lazyload DLExtraInfo-sectionGraphic flag" data-lazyclass="flag-id"></div> 
+       <div class="DLExtraInfo-sectionDetails"> 
+        <p>This file was uploaded from Indonesia on January 25, 2025 at 4:51 AM</p> 
+       </div> 
+      </div> 
+      <div class="DLExtraInfo-upload DLExtraInfo-column"> 
+       <!-- VirusTotal scan --> 
+       <div class="DLExtraInfo-virusTotal DLExtraInfo-row"> 
+        <div class="DLExtraInfo-sectionGraphic"> 
+         <div class="lazyload DLExtraInfo-sectionGraphicCenter" data-lazyclass="DLExtraInfo-virusTotalImage"></div> 
+        </div> 
+        <div class="DLExtraInfo-sectionDetails"> 
+         <div class="DLExtraInfo-sectionHeading">
+          VirusTotal scan
+         </div> 
+         <p> MediaFire scans high-risk files using VirusTotal. </p> 
+        </div> 
+       </div> 
+       <!-- Like MediaFire on Facebook --> 
+       <div class="DLExtraInfo-Facebook DLExtraInfo-row"> 
+        <div class="social-cont"> 
+         <div class="social-fb-cont"> 
+          <span id="social-fb-label">Like MediaFire on Facebook</span> 
+          <iframe class="lazyload nopop" data-lazysrc="https://www.facebook.com/plugins/like.php?href=http://www.facebook.com/MediaFire&amp;width=193&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=30&amp;appId=124578887583575" src="" width="190" height="30" scrolling="no" frameborder="0" allowtransparency="true" aria-labelledby="social-fb-label"></iframe> 
+         </div> 
+        </div> 
+        <noscript>
+         <style>.social-fb-cont>iframe{display:block}</style>
+        </noscript> 
+       </div> 
+      </div> 
+     </div> 
+     <!-- Additional information
+    =================================--> 
+     <div class="DLExtraInfo DLExtraInfo-additional"> 
+      <!-- Alternate for account status (not logged in) --> 
+      <div class="DLExtraInfo-accountStatus DLExtraInfo-column"> 
+       <div class="lazyload DLExtraInfo-sectionIcon" data-lazyclass="DLExtraInfo-accountStatusImage"></div> 
+       <div class="DLExtraInfo-sectionDetails"> 
+        <div class="DLExtraInfo-sectionHeading">
+         About MediaFire
+        </div> 
+        <div class="DLExtraInfo-sectionSubHeading">
+         Welcome!
+        </div> 
+        <p> With MediaFire, you get simple yet powerful file storage along with features you won’t find anywhere else. <a href="/upgrade">Learn more</a> </p> 
+       </div> 
+      </div> 
+      <!-- Browser/download application --> 
+      <div class="DLExtraInfo-downloadApp DLExtraInfo-column"> 
+       <div class="lazyload DLExtraInfo-sectionIcon" data-lazyclass="browser-chrome"></div> 
+       <div class="DLExtraInfo-sectionDetails"> 
+        <div class="DLExtraInfo-sectionHeading">
+         Download application
+        </div> 
+        <div class="DLExtraInfo-sectionSubHeading">
+         Chrome
+        </div> 
+        <p> You are downloading this file with <span>Chrome.</span> </p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="share" class="lightbox" role="dialog" tabindex="-1"> 
+    <figure> 
+     <a href="#" class="close" id="share-close" title="Close share dialog"><span style="display: none">Close share dialog</span></a> 
+     <figcaption> 
+      <iframe id="share-iframe" data-src="https://www.mediafire.com/widgets/share.php?web=1&amp;dlr=1&amp;files=fs4e5pcdokks7rs" allowtransparency="true" style=""> &lt;p id="share-desc"&gt; Failed to load. Try again in a supported browser. &lt;/p&gt; </iframe> 
+      <noscript> 
+       <p id="share-desc"> Failed to load. Please enable JavaScript. </p> 
+      </noscript> 
+     </figcaption> 
+    </figure> 
+   </div> 
+  </main> 
+  <footer role="contentinfo" id="footer" class="footer"> 
+   <div class="u-wrap" id="mainFooterWrap"> 
+    <div class="footerColWrap u-cf"> 
+     <div class="footerCol"> 
+      <h2><a href="/about/">Company</a></h2> 
+      <ul> 
+       <li class="minFooterShow"><a href="/about/">About<b> Us</b></a></li> 
+       <li><a href="/about/jobs.php">Careers</a></li> 
+       <li><a href="/press/">Press</a></li> 
+       <li><a href="http://blog.mediafire.com/" target="_blank">Company Blog</a></li> 
+      </ul> 
+     </div> 
+     <div class="footerCol"> 
+      <h2><a href="/software/index.php">Tools</a></h2> 
+      <ul> 
+       <li class="minFooterShow"> <a href="/software/mobile/"><b>MediaFire </b>Mobile</a> </li> 
+       <li class="minFooterShow"> <a href="https://fast.io" title="Fast.io - File Sharing and Cloud Storage for Teams" target="_blank" rel="noopener noreferrer" aria-label="Fast.io - Team File Sharing and Cloud Storage for Small Businesses">AI Cloud Storage for Teams</a> </li> 
+      </ul> 
+     </div> 
+     <div class="footerCol"> 
+      <h2><a href="/upgrade/">Upgrade</a></h2> 
+      <ul> 
+       <li><a href="/upgrade/index.php?plan=Pro">Professional</a></li> 
+      </ul> 
+     </div> 
+     <div class="footerCol"> 
+      <h2><a href="https://mediafire.zendesk.com/hc/en-us" target="_blank">Support</a></h2> 
+      <ul> 
+       <li class="minFooterShow"><a href="https://mediafire.zendesk.com/hc/en-us" target="_blank"><b>Get Support</b></a></li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <!-- SUBFOOTER --> 
+   <div id="subFooterWrap"> 
+    <div id="subFooter" class="u-wrap"> 
+     <ul class="subFooterLinks"> 
+      <li id="copyrightInfo">©2025 MediaFire<span> Build 121939</span></li> 
+      <li><a href="/advertising/">Advertising</a></li> 
+      <li><a href="/policies/terms_of_service.php">Terms</a></li> 
+      <li><a href="/policies/privacy_policy.php">Privacy Policy</a></li> 
+      <li><a href="/policy_violation/copyright.php">Copyright</a></li> 
+      <li><a href="/policy_violation/terms_of_service.php">Abuse</a></li> 
+      <li><a href="/credits/">Credits</a></li> 
+      <li><a href="https://fast.io">AI Cloud Storage for Teams</a></li> 
+      <li><a href="/about/">More...</a></li> 
+     </ul> 
+     <div class="subFooterSocialWrap"> 
+      <ul id="subFooterSocial"> 
+       <li class="footerIcn"> <a href="http://blog.mediafire.com/" class="footerIcnBlog" target="_blank" title="MediaFire Blog"> <span class="footerIcnBlog"></span> </a> </li> 
+       <li class="footerIcn"> <a href="https://twitter.com/#!/mediafire" class="footerIcnTw" target="_blank" rel="noreferrer" title="MediaFire's Twitter page"> <span class="footerIcnTw"></span> </a> </li> 
+       <li class="footerIcn" style="margin-left: 0;"> <a href="https://www.facebook.com/mediafire" class="footerIcnFb" target="_blank" rel="noreferrer" title="MediaFire's Facebook page'"> <span class="footerIcnFb"></span> </a> </li> 
+      </ul> 
+     </div> 
+     <div class="socialLinks" id="minSocialLinks"> 
+      <a href="https://www.facebook.com/mediafire" class="shareFacebook" title="MediaFire on Facebook"><span style="display: none">Facebook Page</span></a> 
+      <a href="https://twitter.com/mediafire" class="shareTwitter" title="MediaFire on Twitter"><span style="display: none">Twitter Page</span></a> 
+      <a href="https://blog.mediafire.com/" class="shareBlogger" title="MediaFire Blog"><span style="display: none">MediaFire Blog</span></a> 
+     </div> 
+    </div> 
+   </div> 
+  </footer> 
+
+  <script type="text/javascript">
+                window.addEventListener('load',  function() {
+                    document.querySelectorAll('.popsok').forEach(function(element) {
+                        element.addEventListener('click', function(event) {
+                            var iAdCount = parseInt(getCookie('ad_count')) || 0;
+                            if (iAdCount < 4) {
+                                iAdCount++;
+                                document.cookie = "ad_count=" + iAdCount + ";expires=" + (new Date(1748392782000)).toGMTString() + ";path=/";
+                            }
+                        });
+                    });
+                });
+
+                window.iAdCountInterval = setInterval(function() {
+                    var iAdCount = parseInt(getCookie('ad_count')) || 0;
+                    if (iAdCount >= 4) {
+                        document.querySelectorAll('.popsok').forEach(function(element) {
+                            element.classList.remove('popsok');
+                        });
+                        clearInterval(window.iAdCountInterval);
+                    }
+                }, 200);
+            </script> 
+  <div id="cookie-accept-footer" class="CookieAcceptance"> 
+   <p>MediaFire uses cookies to provide you with a personalized browsing experience. By continuing to use this site, you agree to our Privacy Policy.</p> 
+   <div class="CookieAcceptance-buttons"> 
+    <a href="#" class="CookieAcceptance-close" onclick="acceptCookieFooter(); return false;"> <span>Dismiss</span> </a> 
+    <a href="#" class="CookieAcceptance-accept" onclick="acceptCookieFooter(); return false;"> I Accept </a> 
+   </div> 
+  </div> 
+  <script type="text/javascript">
+    function acceptCookieFooter() {
+        var el = document.getElementById('cookie-accept-footer');
+        if (el) el.style.display = 'none';
+        document.cookie = "accept-cookies=1;domain=.mediafire.com;path=/;max-age=31536000";
+    }
+</script> 
+  <div id="status"> 
+   <div id="status-message"></div> 
+   <div id="status-close">
+    Click to dismiss this message
+   </div> 
+  </div> 
+  <iframe name="iframe_worker" id="iframe_worker" src="" style="display:none;height:0;width:0;"></iframe> 
+  <script type="text/javascript">(function(){
+(function() {
+  // Options
+  var optThemeClass = "defaultTheme";
+
+  // Interface
+  var uiButtonLogout = document.getElementById('logout');
+  var uiStatusContainer = document.getElementById('status');
+  var uiStatusMessage = document.getElementById('status-message');
+  var uiIframeWorker = document.getElementById('iframe_worker');
+  var uiDropdowns = document.getElementsByClassName('dropdown');
+  var uiGoogleLang = document.getElementsByClassName('goog-te-combo');
+
+  // State
+  var stateTimerStatus;
+
+  // Legacy
+  try {document.domain = 'mediafire.com'} catch(e) {};
+  window.reloadPage = function() { window.location.reload(); };
+  window.noop = function() {};
+  window.ClearStatusMessages = reloadPage;
+  window.setCookieSeconds = noop;
+  window.Re = reloadPage;
+  window.aU = noop;
+
+  // Globals
+  window.setCookie = function(name, value, expireDays) {
+    var date = new Date();
+    date.setDate(date.getDate() + expireDays);
+    document.cookie = name + "=" + escape(value)
+      + ((expireDays == null) ? "" : ";expires="
+      + date.toGMTString()) + ";path=/";
+  }
+
+  window.getCookie = function(name) {
+    if (document.cookie.length > 0) {
+      var start = document.cookie.indexOf(name + "=");
+      if (start !== -1) {
+        start = start + name.length + 1;
+        var end = document.cookie.indexOf(";",start);
+        if (end === -1) end = document.cookie.length;
+        return unescape(document.cookie.substring(start, end));
+      }
+    }
+    return '';
+  }
+
+  window.loadHotjar = function() {
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:1232118,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  }
+
+  window.registerGoogleLang = function() {
+    var updateLanguage = function(e) {
+      document.body.className = (e.target.value || 'en') + ' ' + optThemeClass;
+    };
+    if (uiGoogleLang) {
+      for (var i = 0; i < uiGoogleLang.length; i++) {
+        uiGoogleLang[i].onchange = updateLanguage;
+      }
+    }
+  }
+
+  // Locals
+  function clickOutside() {
+    document.removeEventListener('click', clickOutside);
+    if (uiDropdowns) {
+      for (var i = 0; i < uiDropdowns.length; i++) {
+        uiDropdowns[i].classList.remove('show_dropdown');
+      }
+    }
+  }
+
+  function toggleDropdown(dropdown) {
+    return function(e) {
+      // Workaround to an issue with an unwanted mouseevent firing on mousedown
+	  // We want this to run on click event only.
+      if (e.constructor.name == 'MouseEvent') {
+        return;
+      }
+      if (dropdown.classList.contains('show_dropdown')) {
+        dropdown.classList.remove('show_dropdown');
+      } else {
+        e.preventDefault();
+        dropdown.classList.add('show_dropdown');
+        setTimeout(function() {
+          document.addEventListener('click', clickOutside);
+        }, 0);
+      }
+    };
+  }
+
+  // Send the event to mediafiredls.com
+  window.trackDownloadEvent = function(event) {
+    (function() {
+      var oXHR = new XMLHttpRequest();
+      oXHR.open('GET', 'https://www.mediafiredls.com/' + event + '/' + (getCookie('ad_count') || '0'), true);
+      oXHR.send();
+    })();
+  }
+
+  // Events
+  if (uiButtonLogout) {
+    uiButtonLogout.onclick = function(e) {
+      e.preventDefault();
+      if (uiIframeWorker)
+        uiIframeWorker.src = e.target.href;
+      return false;
+    }
+  }
+
+  if (uiDropdowns) {
+    for (var i = 0; i < uiDropdowns.length; i++) {
+      uiDropdowns[i].onclick = toggleDropdown(uiDropdowns[i]);
+    }
+  }
+
+  if (uiStatusContainer) {
+    window.closeStatusMessage = function() {
+      if (stateTimerStatus) {
+        clearTimeout(stateTimerStatus);
+        stateTimerStatus = null;
+      }
+      uiStatusMessage.innerText = '';
+      uiStatusMessage.textContent = '';
+      uiStatusContainer.style.display = 'none';
+    }
+
+    window.showStatusMessage = function(message) {
+      uiStatusMessage.innerText = message;
+      uiStatusMessage.textContent = message;
+      uiStatusContainer.style.display = 'block';
+      setTimeout(closeStatusMessage, 3500);
+    }
+
+    uiStatusContainer.onclick = function(e) {
+      e.preventDefault();
+      closeStatusMessage();
+    };
+  }
+
+  // Keyboard focus styling
+  try {
+    document.addEventListener('keydown', function(e) {
+      if (e.keyCode === 9) {
+        document.body.classList.add('show-focus-outlines');
+      }
+    });
+
+    document.addEventListener('click', function(e) {
+      document.body.classList.remove('show-focus-outlines');
+    });
+  } catch (e) {}
+})();
+
+(function() {
+  // Options
+  var optFileKey = "fs4e5pcdokks7rs";
+  var optFileName = "Download_Video_Bokep_Terbaru.mp4";
+  var optFileURL = "https://www.mediafire.com/file/fs4e5pcdokks7rs/Download_Video_Bokep_Terbaru.mp4/file";
+  var optLoggedIn = "false" === "true";
+  var optReportTurboDL = "false" === "true";
+  var optSecurityToken = "1748391882.d14e594777c1cb45344e4970e6fd8b500240941e56ae0374957ff3505764778f";
+  var optJsDirectLink = "false" === "true";
+  var optTurboDownload = "false" === "true";
+
+  // Elements
+  var elWrapperAd = document.getElementById('non-dl-content');
+  var elWrapperShare = document.getElementById('share');
+  var elCloseShare = document.getElementById('share-close');
+  var elIframeShare = document.getElementById('share-iframe');
+  var elShare = document.getElementById('shareButton');
+  var elShareMobile = document.getElementById('shareButtonMobile');
+  var elSave = document.getElementById('saveButton');
+  var elSaveMobile = document.getElementById('saveButtonMobile');
+  var elSaveParallel = document.getElementById('saveButtonParallel');
+  var elCopyLink = document.getElementById('copyShareURL');
+  var elCopyLinkMobile = document.getElementById('copyShareURLMobile');
+  var elCloseMobileTD = document.getElementById('mobile-turbo-dl-btn-close');
+  var elEnableMobileTD = document.getElementById('mobile-turbo-dl-btn-enable');
+  var elCancelMobileTD = document.getElementById('mobile-turbo-dl-btn-cancel');
+
+  // State
+  var alwaysReloadShareBox = true;
+  var stateShareBoxLoaded = false;
+  elIframeShare.style.display = '';
+
+  // Globals
+  window.downloadOptIn = function() {
+    document.cookie = "=1; path=/";
+    window.trackTurboDownload('opt_in');
+    window.location.reload();
+  }
+
+  window.showTDOptInDialog = function() {
+    document.body.classList.add('modal-open');
+    document.getElementById('mobile-turbo-dl-enable').style = 'display:block !important';
+  }
+
+  window.closeMobileTD = function(src) {
+	  src && src.preventDefault();
+	  try {
+		  document.body.classList.remove('modal-open');
+		  document.getElementById('mobile-turbo-dl-enable').style = '';
+	  } catch(e) { }
+  }
+
+  window.addEventListener("message", function(e) {
+    if (e && e.data === 'mf-close-dialogs') {
+      closeShareDialog();
+    }
+  });
+
+  window.trackTurboDownload = function(event, details) {
+    if (!optReportTurboDL) return;
+    try {
+      var xhr = new XMLHttpRequest();
+      var query = 'security=' + optSecurityToken + '&event=' + event;
+      if (details) {
+        query += '&connections=' + details.connections
+          + '&speed_kbps=' + details.speed
+          + '&duration=' + details.duration
+          + '&filesize=' + details.filesize
+          + '&go_experiment=' + (window.go_experiment || '');
+      }
+      xhr.open('POST', '/dynamic/track_turbo_download.php', true);
+      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      xhr.send(query);
+    } catch(e) {}
+    try {
+      gtag('event', event, {
+        'event_category': 'turbo_download'
+      });
+    } catch (e) {}
+  };
+
+  window.showDesktopDownloadArrow = function() {
+    try {
+      if (navigator.userAgent.match(/Mobi/)) return;
+      var div = document.createElement("div");
+      div.id = 'download-arrow';
+      document.body.appendChild(div);
+      setTimeout(function() {div.style.opacity = 1}, 100);
+    } catch(e) {}
+  };
+
+  window.hideDesktopDownloadArrow = function() {
+    try {
+      var div = document.getElementById('download-arrow');
+      div.parentNode.removeChild(div);
+    } catch(e) {}
+  };
+
+  window.onLegacyCopyLink = function(legacyLink) {
+    copyShareLink(null, legacyLink);
+  };
+
+ // window.openShareDialog = function(src) {
+  //  src && src.preventDefault();
+ //   document.body.classList.add('modal-open');
+ //   elWrapperShare.style = 'display:block !important';
+  //  if (alwaysReloadShareBox || !stateShareBoxLoaded) {
+ //     elIframeShare.onload = function() {
+ //       stateShareBoxLoaded = true;
+ //     }
+//      elIframeShare.src = elIframeShare.getAttribute('data-src');
+//    }
+//  }
+
+  window.saveToMyfiles = function(src) {
+    src && src.preventDefault();
+    if (!optLoggedIn) {
+      window.location.href = '/';
+      return;
+    }
+    var success = false;
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/dynamic/save_to_myfiles.php', true);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.onload = function() {
+      try {
+        success = JSON.parse(this.responseText).success;
+      } catch (e) {
+        success = false;
+      }
+      showStatusMessage(success
+        ? 'Saved ' + optFileName + ' to your account!'
+        : 'You do not have access to save ' + optFileName + ' to your account.');
+    };
+    xhr.send('security=' + optSecurityToken + '&quick_key=' + optFileKey);
+    return false;
+  }
+
+  window.copyShareLink = function(src, altLink) {
+    src && src.preventDefault();
+    var targetLink = altLink || optFileURL;
+    try {
+      var iosCopyToClipboard = function(el) {
+        var oldContentEditable = el.contentEditable,
+          oldReadOnly = el.readOnly,
+          range = document.createRange();
+        el.contentEditable = true;
+        el.readOnly = false;
+        range.selectNodeContents(el);
+        var s = window.getSelection();
+        s.removeAllRanges();
+        s.addRange(range);
+        el.setSelectionRange(0, 999999);
+        el.contentEditable = oldContentEditable;
+        el.readOnly = oldReadOnly;
+        document.execCommand('copy');
+        document.activeElement.blur();
+      };
+      var copyListener = function(event) {
+        document.removeEventListener('copy', copyListener, true);
+        event.preventDefault();
+        var clipboardData = event.clipboardData;
+        clipboardData.clearData();
+        clipboardData.setData('text/plain', targetLink);
+        clipboardData.setData('text/html', targetLink);
+      };
+      iosCopyToClipboard(document.getElementById('copy')); // iOS workaround
+      document.addEventListener('copy', copyListener, true);
+      document.execCommand('copy');
+      showStatusMessage('Share Link copied to the clipboard!');
+    } catch(e) {
+      window.prompt('Press CTRL+C to copy share link:', targetLink);
+    }
+    return false;
+  }
+
+  // Locals
+  function closeShareDialog(src) {
+    src && src.preventDefault();
+    try {
+      document.body.classList.remove('modal-open');
+      elWrapperShare.style = '';
+    } catch(e) { }
+  }
+
+  // Ad viewport events
+  if (elWrapperAd) {
+      function onScrollResizeChange() {
+          var boundingRect = elWrapperAd.getBoundingClientRect();
+	      window.checkQueuedAdUnitViews && window.checkQueuedAdUnitViews({
+              windowPageXOffset: - boundingRect.left,
+              windowPageYOffset: - boundingRect.top,
+              windowInnerWidth: window.innerWidth,
+              windowInnerHeight: window.innerHeight
+          });
+      }
+      window.addEventListener("scroll", onScrollResizeChange);
+      window.addEventListener("resize", onScrollResizeChange);
+      setTimeout(onScrollResizeChange, 1000);
+      setTimeout(onScrollResizeChange, 3000);
+  }
+
+  // Lazy-loading
+  window.startLazyLoad = function() {
+    try {
+      var observer;
+      function setupObserver() {
+        observer = new IntersectionObserver(function(obsList) {
+          handleIntersection(obsList);
+        }, {rootMargin: "10px 0px"});
+        findLazyLoadElements();
+      }
+      function findLazyLoadElements() {
+        var elements = document.getElementsByClassName('lazyload');
+        for (var el of elements) {
+          observer.observe(el);
+        }
+      }
+      function handleIntersection(obsList) {
+        for (var obs of obsList) {
+          var el = obs.target;
+          if (obs.isIntersecting) {
+            var lazyClass = el.getAttribute('data-lazyclass');
+            if (lazyClass) el.classList.add(lazyClass);
+            var lazySource = el.getAttribute('data-lazysrc');
+            if (lazySource && el.src !== lazySource) el.src = lazySource;
+          }
+        }
+      }
+      setupObserver();
+    } catch(e) {
+      var elements = document.getElementsByClassName('lazyload');
+      for (var i = 0; i < elements.length; i++) {
+        var el = elements[i];
+        el.className += ' ' + el.getAttribute('data-lazyclass');
+        var lazySource = el.getAttribute('data-lazysrc');
+        if (lazySource && el.src !== lazySource) el.src = lazySource;
+      }
+    }
+  };
+
+  if (window.gtag) {
+    gtag('event', 'optimize.callback', {
+      callback: function(sVariants, sExperimentId) {
+        window.go_experiment = sExperimentId + ':' + sVariants;
+      }
+    });
+  }
+
+  window.addEventListener('load',  function() {
+    var dlButton;
+    if (optTurboDownload) {
+      dlButton = document.getElementsByClassName('mftd-download').item(0);
+      if (!dlButton) {
+	    dlButton = document.getElementsByClassName('mftd-mobile').item(0);
+      }
+    } else {
+  	  dlButton = document.getElementById('downloadButton');
+    }
+
+    if (dlButton) {
+      // Auto click the download button for the user
+	  if (optJsDirectLink) {
+        dlButton.click();
+      }
+
+      // Store the most recent downloaded file after an actual button click so it can be using to prevent the adsupply
+      // popup from showing
+      if (dlButton) {
+        dlButton.addEventListener('click', function() {
+          document.cookie = "click_download=" + optFileKey + ";path=/";
+  	    });
+      }
+    }
+  });
+
+  /** Set a callbacks so Adsupply notify us every step of the pop under **/
+  // Trigered when onclick event handler is attached by adsupply code
+  window.callbackEvent = null;
+  window.InfPreInterstitialProcessCallback = function() {
+    window.trackDownloadEvent && window.trackDownloadEvent('onclick');
+  }
+  // Trigered when pop-trigering element is clicked
+  var clickedEventSent = false;
+  window.InfClickEventCallback = function(event) {
+    if (clickedEventSent) return;
+    if (!event.target.classList.contains('popsok')) return;
+    clickedEventSent = true;
+    window.trackDownloadEvent && window.trackDownloadEvent('clicked');
+  };
+  // trigered when pop ad is opened
+  window.InfCustomerPopLoadedCallback = function() {
+    window.trackDownloadEvent && window.trackDownloadEvent('completed');
+  };
+
+  // Events
+  if (elShare) elShare.onclick = openShareDialog;
+  if (elShareMobile) elShareMobile.onclick = openShareDialog;
+  if (elWrapperShare) elWrapperShare.onclick = closeShareDialog;
+  if (elCloseShare) elCloseShare.onclick = closeShareDialog;
+  if (elSave) elSave.onclick = saveToMyfiles;
+  if (elSaveMobile) elSaveMobile.onclick = saveToMyfiles;
+  if (elSaveParallel) elSaveParallel.onclick = saveToMyfiles;
+  if (elCopyLink) elCopyLink.onclick = copyShareLink;
+  if (elCopyLinkMobile) elCopyLinkMobile.onclick = copyShareLink;
+  if (elCloseMobileTD) elCloseMobileTD.onclick = closeMobileTD;
+  if (elEnableMobileTD) elEnableMobileTD.onclick = downloadOptIn;
+  if (elCancelMobileTD) elCancelMobileTD.onclick = closeMobileTD;
+})();
+(function() {
+	var plan = 'ultra_50_monthly_b';
+
+	// Detect ad blocker
+	function showUpsell() {
+		document.querySelector('div.upsell-ab-promo').style.display = 'flex';
+		document.querySelector('div.upsell-ab-promo style').media = '';
+	}
+
+	function isElementHidden(elementId) {
+		if ((element = document.getElementById(elementId)) === null) {
+			return false;
+		}
+		const style = window.getComputedStyle(element);
+		return style.display === "none" || style.visibility === "hidden" || style.opacity === "0";
+	}
+
+	function checkTestElement() {
+		var attempt = function() {
+			if (isElementHidden('abdd')) {
+				showUpsell();
+				return;
+			}
+			if (new Date().getTime() - starttime > 3000) {
+				return;
+			}
+			setTimeout(attempt, 200);
+		};
+		attempt();
+	}
+
+	function checkGoogleAdManager() {
+		setTimeout(function() {
+			if (window.google_tag_manager === undefined) {
+				showUpsell();
+			}
+		}, 500);
+	}
+
+	window.upsellClick = () => {
+        upgradeWidget.launch(plan, (success, data) => {
+            if (success) {
+                window.location.reload();
+            }
+        });
+    };
+
+	window.selectPlan = () => {
+		var selected = document.querySelector('.UltraPlan-options input:checked').value;
+		switch (selected) {
+			case '0':
+				plan = 'ultra_50_monthly_b';
+				break;
+			case '1':
+				plan = 'ultra_100_monthly';
+				break;
+			/*
+			case '2':
+				plan = 'ultra_250_monthly';
+				break;
+			*/
+			case '3':
+				plan = 'ultra_500_monthly';
+				break;
+			case '4':
+				plan = 'ultra_50_yearly';
+		}
+	};
+
+	var starttime = new Date().getTime();
+	checkTestElement();
+	checkGoogleAdManager();
+})();
+
+})();</script> 
+  <script type="text/javascript">
+        window.startLazyLoad && window.startLazyLoad();  // No lazy ad positioning, fine to start lazy loader.
+    </script> 
+  <img src="https://ad-delivery.net/px.gif?ch=2" style="display: none !important; width: 1px !important; height: 1px !important;">
+  <img src="https://ad.doubleclick.net/favicon.ico?ad=300x250&amp;ad_box_=1&amp;adnet=1&amp;showad=1&amp;size=250x250" style="display: none !important; width: 1px !important; height: 1px !important;">
+  <img src="https://ad-delivery.net/px.gif?ch=1&amp;e=0.48858503660050523" style="display: none !important; width: 1px !important; height: 1px !important;">
+  <div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id="">
+   <div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd">
+    <div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c">
+     <img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt="">
+    </div>
+    <div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c">
+     <div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">
+      Teks asli
+     </div>
+     <div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div>
+    </div>
+    <div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr">
+     <div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr">
+      <div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">
+       Beri rating terjemahan ini
+      </div>
+      <div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">
+       Masukan Anda akan digunakan untuk membantu meningkatkan kualitas Google Terjemahan
+      </div>
+     </div>
+     <div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr">
+      <button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Terjemahan bagus" aria-label="Terjemahan bagus" aria-pressed="false"><span id="goog-gt-thumbUpIcon">
+        <svg width="24" height="24" viewbox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+         <path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path>
+        </svg></span><span id="goog-gt-thumbUpIconFilled">
+        <svg width="24" height="24" viewbox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+         <path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path>
+        </svg></span></button>
+      <button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Terjemahan buruk" aria-label="Terjemahan buruk" aria-pressed="false"><span id="goog-gt-thumbDownIcon">
+        <svg width="24" height="24" viewbox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+         <path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path>
+        </svg></span><span id="goog-gt-thumbDownIconFilled">
+        <svg width="24" height="24" viewbox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+         <path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path>
+        </svg></span></button>
+     </div>
+    </div>
+    <div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce">
+     <form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce">
+      <input type="text" name="sl" id="goog-gt-votingInputSrcLang">
+      <input type="text" name="tl" id="goog-gt-votingInputTrgLang">
+      <input type="text" name="query" id="goog-gt-votingInputSrcText">
+      <input type="text" name="gtrans" id="goog-gt-votingInputTrgText">
+      <input type="text" name="vote" id="goog-gt-votingInputVote">
+     </form>
+     <iframe name="votingFrame" frameborder="0"></iframe>
+    </div>
+   </div>
+  </div> 
+  <div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf">
+   <div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO">
+    <svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewbox="0 0 66 66">
+     <circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+   </div>
+  </div> 
+  <iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" id="1c9715182485ec8" width="0" height="0" src="about:blank" name="__pb_locator__" style="display: none; height: 0px; width: 0px; border: 0px;"></iframe> 
+  <iframe name="googlefcPresent" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe>
+  <iframe name="__tcfapiLocator" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe>
+  <iframe name="__uspapiLocator" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe>
+  <iframe name="__gppLocator" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe>
+  <iframe name="googlefcInactive" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe>
+  <iframe name="googlefcLoaded" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe> 
+  <iframe src="https://gum.criteo.com/syncframe?origin=publishertagids&amp;topUrl=www.mediafire.com&amp;gdpr=0&amp;gdpr_consent=&amp;gpp=&amp;gpp_sid=-1#{&quot;bundle&quot;:{&quot;value&quot;:&quot;zsNv5181dHZNV3JMUXQ5RSUyRm1wemYxb3Y0TE5lcUowS0tMTk0lMkZVZ1hpWHNKMU1lUXhOc2xiYmVWNURCOUswOCUyQlhLN2RhWUU0VDV1VWJIeUZPVkEwdjJpTm1QaG9aUyUyQjM3V0ZsMnZSbG5Hb1U5QnQ1VW5BRm1CWEx5QyUyQk12UmluZlEwT24&quot;,&quot;origin&quot;:3},&quot;optout&quot;:{&quot;value&quot;:false,&quot;origin&quot;:0},&quot;tld&quot;:&quot;mediafire.com&quot;,&quot;topUrl&quot;:&quot;www.mediafire.com&quot;,&quot;version&quot;:160,&quot;origin&quot;:&quot;publishertagids&quot;,&quot;requestId&quot;:&quot;0.31757488427655733&quot;}" width="0" height="0" frameborder="0" sandbox="allow-scripts allow-same-origin" aria-hidden="true" title="Criteo GUM iframe" style="border-width: 0px; margin: 0px; display: none;"></iframe>
+  <iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20250522/r20190131/zrt_lookup_fy2021.html" style="display: none;"></iframe>
+  <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+ </body>
+</html>

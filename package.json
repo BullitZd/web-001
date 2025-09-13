@@ -1,0 +1,22 @@
+{
+  "name": "v3",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-useragent": "^1.0.15",
+    "fs": "^0.0.1-security",
+    "nodemailer": "^7.0.3",
+    "request-ip": "^3.3.0"
+  }
+}
